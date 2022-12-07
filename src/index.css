@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Rubik', sans-serif;
+}
+section {
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(to right, #114357, #f29492);
+  color:#f0d8d8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+}
+.fas{
+  cursor: pointer;
+  color: #ffffff;
+}
+.fa-times{
+  transform: rotate(360deg);
+  transition: all 0.3s ease-in-out;
+}
+.fa-bars{
+  transform: rotate(180deg);
+  transition: all 0.3s ease-in-out;
+}
+

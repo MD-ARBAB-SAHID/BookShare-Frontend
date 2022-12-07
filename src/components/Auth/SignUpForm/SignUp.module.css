@@ -1,0 +1,63 @@
+.container {
+  width: 100%;
+  padding-top: 10vh;
+  padding-bottom: 5vh;
+  text-align: center;
+  
+}
+
+.form {
+  background-color: white;
+  width: 40%;
+  margin: auto;
+  /* padding: 15px 0; */
+  border-radius: 5px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  cursor: no-drop;
+}
+
+.heading div {
+  width: 33.33%;
+  font-size: 25px;
+  padding: 15px 0 20px 0;
+  background-color: rgb(214, 214, 194);
+  border-left: 2px solid rgba(0, 0, 0, 0.178);
+}
+
+@media screen and (max-width: 1300px) {
+  .form {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .form {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .form {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form {
+    width: 85%;
+  }
+  .heading div {
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .form {
+    width: 90%;
+  }
+}

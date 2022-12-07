@@ -1,0 +1,67 @@
+.container{
+    /* position: absolute;
+    top: 140vh; */
+    width: 100%;
+    /* border: 2px solid red; */
+    /* overflow: hidden; */
+}
+.container h1{
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+.container h1::after{
+      /* ::after works too */
+  content: "";
+  position: relative;
+  top: 46%;
+  left:48%; /* Change direction for a different side*/
+  z-index: 100;
+  width: 4%; /* Thickness */
+  height: 3px;
+  background: #f29492; /* Color */
+}
+.banner{
+    /* border: 2px solid red; */
+    width: 80%;
+    /* height: 40vh; */
+    margin: auto;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.left{
+    width: 40%;
+    display: flex;
+    justify-content: left;
+    align-items: top;
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+}
+.right{
+    width: 50%;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.top{
+    margin-top: 20px;
+}
+.backdrop{
+    position: relative;
+    font-size: 40rem;
+    top: -20vh;
+    right: -40vh;
+    z-index: -400;
+    overflow: hidden;
+    color: rgba(200, 199, 199, 0.486);
+}
+@media screen and (max-width: 620px){
+    .banner{
+        width: 95%;
+    }
+    .right,.left{
+        font-size: 70%;
+    }
+}

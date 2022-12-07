@@ -1,0 +1,229 @@
+.card {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  padding: 0.2em;
+  width: 67.3em;
+
+  margin: 2.2em auto 5%;
+
+  border-radius: 0.4em;
+
+  padding: 1em;
+  box-shadow: 0 0.125em 0.5em rgba(0, 0, 0, 0.25);
+  border-radius: 0.875em;
+}
+
+.wrap {
+  font-size: 1em;
+  width: 23em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5em;
+  margin: 1em 0 1em 4.5em;
+}
+.right {
+  font-size: 1em;
+  margin: 0.2em 0.4em;
+  width: 42.54em;
+  /* width: 65%; */
+  padding: 0.1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.right img {
+  width: 36.95em;
+  height: 36.95em;
+  border-radius: 0.875em;
+}
+
+.left {
+  font-size: 1em;
+  margin: 0.4em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.card .left div h1,
+h3,
+h5,
+h2 {
+  padding: 0;
+  margin: 0%;
+}
+.card .element {
+  font-size: 1em;
+  padding: 0.2em 0.2em;
+  margin: 0.4em 0.1em;
+}
+
+.card .left div h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2em;
+  margin: 0.4em 0 0.4em 0;
+}
+.card .left div h3 {
+  font-size: 1.17em;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0.34em 0 0;
+  font-weight: 500;
+  line-height: 1.53em;
+  color: #606264;
+}
+.left div h5 {
+  font-size: 1em;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0.2em 0 1.5em 0;
+
+  line-height: 1.5em;
+  font-weight: 500;
+  /* color: #606264; */
+  color: rgba(0, 0, 0, 0.904);
+}
+
+.card .element h2 span {
+  font-size: 0.94em;
+  margin-left: 0.3em;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+
+  line-height: 1.08em;
+  color: #606264;
+}
+
+.icon {
+  color: rgb(118, 118, 250);
+  font-size: 1.3em;
+  line-height: 1.074em;
+}
+
+.actions {
+  font-size: 1em;
+  padding: 0.2em 0.2em;
+  margin: 0.8em 0.1em;
+}
+
+.actions button {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1em;
+  width: 10em;
+  margin-left: 1em;
+  border-radius: 0.5em;
+  background-color: black; /* Green */
+  border: none;
+  color: white;
+  padding: 0.9375em 2em;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+@media (max-width: 1156px) {
+  .card {
+    font-size: 13.8px;
+    width: 64em;
+  }
+}
+
+@media (max-width: 998px) {
+  .card {
+    font-size: 13px;
+    width: 59em;
+
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .right img {
+    width: 34em;
+    height: 34em;
+    margin: auto;
+  }
+  .wrap {
+    display: block;
+    margin: 0.2em 0.4em;
+    width: 34em;
+  }
+}
+
+@media (max-width: 900px) {
+  .card {
+    font-size: 12px;
+    width: 55em;
+  }
+  .right img {
+    width: 31em;
+    height: 31em;
+  }
+  .wrap {
+    display: block;
+    margin: 0.2em 0.4em;
+    width: 31em;
+  }
+}
+
+@media (max-width: 720px) {
+  .card {
+    font-size: 10.5px;
+    width: 50em;
+  }
+  .right img {
+    width: 28em;
+    height: 28em;
+  }
+  .wrap {
+    display: block;
+    margin: 0.2em 0.4em;
+    width: 28em;
+  }
+}
+
+@media (max-width: 568px) {
+  .card {
+    font-size: 9.3px;
+    width: 44em;
+  }
+  .right img {
+    width: 26em;
+    height: 26em;
+  }
+  .wrap {
+    display: block;
+    margin: 0.2em 0.4em;
+    width: 26em;
+  }
+}
+@media (max-width: 468px) {
+  .card {
+    font-size: 8px;
+    width: 39em;
+  }
+  .right img {
+    width: 23em;
+    height: 23em;
+  }
+  .wrap {
+    display: block;
+    margin: 0.2em 0.4em;
+    width: 23em;
+  }
+}
+@media (max-width: 400px) {
+  .card {
+    font-size: 7.7px;
+    width: 37em;
+  }
+  .right img {
+    width: 21em;
+    height: 21em;
+  }
+  .wrap {
+    display: block;
+    margin: 0.2em 0.4em;
+    width: 21em;
+  }
+}

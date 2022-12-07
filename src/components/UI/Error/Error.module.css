@@ -1,0 +1,33 @@
+.animation{
+
+    width:350px;
+    height: 350px;
+    display: block;
+    margin: auto;
+    /* border: 2px solid red; */
+    /* padding-bottom: 2rem; */
+}
+.actions{
+    /* border: 2px solid red; */
+    text-align: center;
+}
+.actions button {
+    cursor: pointer;
+    font: inherit;
+    color: white;
+    margin: 20px auto;
+    width: fit-content;
+    background: linear-gradient(to right, #114357, #f29492);
+    border: none;
+    border-radius: 4px;
+    height: 3rem;
+    width: 20%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.5rem 2.5rem;
+  }
+  
+  .actions button:hover {
+    background-color: #662a86;
+    border-color: #662a86;
+  }

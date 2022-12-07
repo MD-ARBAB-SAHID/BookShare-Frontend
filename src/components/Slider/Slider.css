@@ -1,0 +1,195 @@
+.container-slider {
+  width: 100%;
+  height: 85vh;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  /* border: 2px solid red; */
+  /* border-radius: 10px; */
+  z-index: -1;
+}
+/* @media screen and (max-width: 700px){
+} */
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: opacity ease-in-out 0.4s;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -10;
+}
+.active-anim {
+  opacity: 1;
+}
+
+.btn-slide {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #ffffff81;
+  border: 1px solid rgb(65, 61, 61);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn-slide img {
+  width: 25px;
+  height: 25px;
+  pointer-events: none;
+}
+.prev {
+  top: 50%;
+  left: 20px;
+  transform: translateY(-60%);
+}
+.next {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-60%);
+}
+
+.container-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.dot {
+  width: 50px;
+  height: 2px;
+  /* border-radius: 50%; */
+  /* border: 3px solid #f1f1f1af; */
+  margin: 0 5px;
+  background: #f1f1f181;
+}
+.dot.active {
+  background: rgb(0, 0, 0);
+}
+.try {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* border: 2px solid red; */
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.527);
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  width: 70%;
+  height: 75%;
+  margin-top: 40px;
+  font-size: 4rem;
+  color: white;
+  /* border: 2px solid red; */
+}
+.typeWriter {
+  /* border:2px solid red; */
+  min-height: 70%;
+}
+.actions {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  /* z-index: 100; */
+  /* border: 2px solid red; */
+}
+.actions button {
+  margin: 20px auto;
+  /* position: fixed; */
+  background-color: transparent;
+  width: 10rem;
+  height: 4rem;
+  border: 2px solid white;
+  font-family: inherit;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 5px;
+}
+.actions button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: grey;
+}
+@media screen and (max-width: 1150px){
+  .header {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 870px){
+  .header {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 620px){
+  .header {
+    font-size: 2.7rem;
+  }
+  .btn-slide {
+    width: 50px;
+    height: 50px;
+  }
+  .prev{
+    left: 15px;
+  }
+  .next{
+    right: 15px;
+  }
+}
+@media screen and (max-width: 520px){
+  .header {
+    font-size: 2.4rem;
+  }
+  .btn-slide {
+    width: 45px;
+    height: 45px;
+  }
+  .prev{
+    left: 10px;
+  }
+  .next{
+    right: 10px;
+  }
+
+}
+@media screen and (max-width: 430px){
+  .header {
+    font-size: 2.2rem;
+  }
+  .actions button {
+    width: 8rem;
+    height: 3.5rem;
+  }
+  .btn-slide {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 330px){
+  .header {
+    font-size: 2rem;
+  }
+  .prev{
+    left: 5px;
+  }
+  .next{
+    right: 5px;
+  }
+}
